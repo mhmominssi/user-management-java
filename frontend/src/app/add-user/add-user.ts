@@ -21,7 +21,7 @@ export class AddUser {
         console.log("Status Code:", response.status);
         console.log("Response Body:", response.body);
 
-        if (response.status === 200) {
+        if (response.status === 201) {
           console.log("Success ✅");
           this.router.navigate(['users'])
         }

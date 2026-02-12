@@ -7,13 +7,13 @@ import com.database.project.user_management_app.model.UserModel;
 
 public interface UserService {
 
-	void updateUser(UserModel user, Long userId);
+	UserModel updateUser(UserModel user, Long userId);
 
 	List<UserModel> getAllUser();
 
 	Optional<UserModel> getUserById(Long userId);
 
-	void saveUser(UserModel user);
+	UserModel saveUser(UserModel user);
 
 	void deleteUserById(Long userId);
 

@@ -11,15 +11,14 @@ import com.database.project.user_management_app.repo.UserRepository;
 import com.database.project.user_management_app.service.UserService;
 
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
 	@Autowired
 	private UserRepository userRepository;
-	 
-	
+
 	@Override
-	public void updateUser(UserModel user, Long userId) {
-		userRepository.save(user);
+	public UserModel updateUser(UserModel user, Long id) {
+		return userRepository.save(user);
 	}
 
 	@Override
@@ -31,19 +30,18 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public Optional<UserModel> getUserById(Long userId) {
 		Optional<UserModel> user = userRepository.findById(userId);
-		
+
 		return user;
 	}
 
 	@Override
-	public void saveUser(UserModel user) {
-		userRepository.save(user);
-		
+	public UserModel saveUser(UserModel user) {
+		return userRepository.save(user);
 	}
 
 	@Override
 	public void deleteUserById(Long userId) {
 		userRepository.deleteById(userId);
 	}
-	
+
 }
