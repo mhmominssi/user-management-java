@@ -3,6 +3,7 @@ import { ChangeDetectorRef, Component, model, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { UserData } from '../service/user-data';
 import { RouterLink } from "@angular/router";
+import { KENDO_GRID } from '@progress/kendo-angular-grid';
 
 
 export class User {
@@ -18,7 +19,7 @@ export class User {
 }
 @Component({
   selector: 'app-users',
-  imports: [FormsModule, CommonModule, RouterLink],
+  imports: [FormsModule, CommonModule, RouterLink, KENDO_GRID],
   templateUrl: './users.html',
   styleUrl: './users.css',
 })

@@ -1,17 +1,41 @@
 .card {
   border: none;
-  border-radius: 15px;
+  border-radius: 16px;
 }
 
-.table th {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.table td {
-  font-size: 14px;
+button {
+  border-radius: 10px;
 }
 
 button.btn-sm {
   border-radius: 8px;
+}
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.kendo-modern-grid .k-grid-header {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.kendo-modern-grid .k-grid-content tr:hover {
+  background-color: #f1f5ff;
+  transition: 0.2s ease;
+}
+
+.kendo-modern-grid {
+  border-radius: 16px;
+}
+
+.k-grid {
+  border: none;
+}
+
+.modal-content {
+  border-radius: 18px;
 }
