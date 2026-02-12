@@ -1,0 +1,17 @@
+.card {
+  border: none;
+  border-radius: 15px;
+}
+
+.table th {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.table td {
+  font-size: 14px;
+}
+
+button.btn-sm {
+  border-radius: 8px;
+}

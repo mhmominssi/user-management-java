@@ -1,0 +1,66 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-7 col-md-9">
+      <div class="card shadow-sm">
+        <div class="card-header bg-white">
+          <h4 class="fw-bold mb-0">
+            <i class="bi bi-person-plus-fill me-2 text-primary"></i>
+            Create User
+          </h4>
+        </div>
+        <div class="card-body">
+          <form (ngSubmit)="addUser(user)">
+
+            <!-- First Name + Last Name -->
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" name="firstName" placeholder="Enter first name"
+                  [(ngModel)]="user.firstName">
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" name="lastName" placeholder="Enter last name"
+                  [(ngModel)]="user.lastName">
+              </div>
+            </div>
+
+            <!-- Gender -->
+            <div class="mb-3">
+              <label class="form-label">Gender</label>
+              <select class="form-select" name="gender" [(ngModel)]="user.gender">
+                <option disabled value="">Select gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <!-- City -->
+            <div class="mb-3">
+              <label class="form-label">City</label>
+              <input type="text" class="form-control" name="city" placeholder="Enter city" [(ngModel)]="user.city">
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="mb-4">
+              <label class="form-label">Date of Birth</label>
+              <input type="date" class="form-control" name="dob" [(ngModel)]="user.dob">
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <button type="reset" class="btn btn-outline-secondary me-2">
+                Cancel
+              </button>
+
+              <button type="submit" class="btn btn-primary">
+                Save User
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

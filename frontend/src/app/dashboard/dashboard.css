@@ -1,0 +1,22 @@
+.dashboard-card {
+  border: none;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.table th {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.table td {
+  font-size: 14px;
+}
