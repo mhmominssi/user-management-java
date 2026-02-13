@@ -3,18 +3,31 @@ package com.database.project.user_management_app.service;
 import java.util.List;
 import java.util.Optional;
 
-import com.database.project.user_management_app.model.UserModel;
+import com.database.project.user_management_app.dto.UserDto;
 
 public interface UserService {
 
-	UserModel updateUser(UserModel user, Long userId);
+    UserDto updateUser(UserDto user, Long userId);
 
-	List<UserModel> getAllUser();
+    List<UserDto> getAllUser();
 
-	Optional<UserModel> getUserById(Long userId);
+    Optional<UserDto> getUserById(Long userId);
 
-	UserModel saveUser(UserModel user);
+    UserDto saveUser(UserDto user);
 
-	void deleteUserById(Long userId);
-
+    void deleteUserById(Long userId);
 }
+
+//public interface UserService {
+//
+//	UserDto updateUser(UserDto user, Long userId);
+//
+//	List<UserModel> getAllUser();
+//
+//	Optional<UserDto> getUserById(Long userId);
+//
+//	UserDto saveUser(UserDto user);
+//
+//	void deleteUserById(Long userId);
+//
+//}

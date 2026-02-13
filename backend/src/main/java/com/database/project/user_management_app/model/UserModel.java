@@ -11,8 +11,8 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "users", schema = "public")
-public class UserModel {
 
+public class UserModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
